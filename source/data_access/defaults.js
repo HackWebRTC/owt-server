@@ -34,12 +34,14 @@ const DEFAULT_VIDEO_IN = [
   { codec: 'h264' },
   { codec: 'vp8' },
   { codec: 'vp9' },
+  { codec: 'h265' },
 ];
 const DEFAULT_VIDEO_OUT = [
   { codec: 'vp8' },
   { codec: 'h264', profile: 'CB' },
   { codec: 'h264', profile: 'B' },
   { codec: 'vp9' },
+  { codec: 'h265' },
 ];
 const DEFAULT_VIDEO_PARA = {
   resolution: ['x3/4', 'x2/3', 'x1/2', 'x1/3', 'x1/4', 'hd1080p', 'hd720p', 'svga', 'vga', 'qvga', 'cif'],
@@ -85,7 +87,7 @@ const DEFAULT_ROOM_CONFIG = {
       parameters: DEFAULT_VIDEO_PARA
     }
   },
-  views: [{}]
+  views: []
 };
 
 module.exports = {
