@@ -445,7 +445,8 @@ exports.processOffer = function (sdp, preference = {}, direction) {
   var audioFormat = filterAudioPayload(sdpObj, preference.audio);
   var videoFormat = filterVideoPayload(sdpObj, preference.video);
   if (videoFormat && videoFormat.codec === 'h264') {
-    videoFormat.profile = finalProfile;
+    //videoFormat.profile = finalProfile;
+    videoFormat.profile = 'B';
   }
   sdp = transform.write(sdpObj);
 
