@@ -13,3 +13,7 @@ node_modules/
 *.d
 *.a
 *.so
+
+.vscode/settings.json
+package-lock.json
+third_party/quic-lib/dist.tgz
